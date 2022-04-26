@@ -10,13 +10,13 @@ body {
 
   .header {
     flex-shrink: 0;
-    height: 70px;
     display: flex;
     background: #1F2937;
     color: white;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding: 32px;
+    flex-wrap: nowrap;
   }
 
     .header img{
@@ -36,6 +36,7 @@ body {
         display:flex;
         list-style: none;
         gap: 45px;
+        flex-wrap: wrap;
     }
 
     .links a{
@@ -49,14 +50,14 @@ body {
     /*inicio principal*/
 
     .principal{
-        flex-shrink: 0;
-    height: 500px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
     display: flex;
     background: #1F2937;
     color: white;
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 50px;
     flex-wrap: wrap;
     }
 
@@ -74,6 +75,7 @@ body {
         flex-direction: column;
         justify-content: center;
         gap: 12px;
+
     }
 
     .descripcion .titulo{
@@ -108,7 +110,7 @@ body {
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
-        height: 500px;
+        padding: 44px;
         align-items: center;
         justify-items: center;
     }
@@ -126,6 +128,7 @@ body {
     }
 
     .galeria .fotos{
+        flex-wrap: wrap;
         flex-shrink: 0;
         display: flex;
         align-items: center;
@@ -163,19 +166,19 @@ body {
     .descripcion-c{
         display: flex;
         flex-direction: column;
-        padding: 8px;
+        padding: 56px;
         justify-content: center;
         align-items: center;
-        height: 350px;
         background-color: #E5E7EB;
         gap:16px;
+        flex-wrap: wrap;
     }
 
     .descripcion-c .frase{
         font-size: 36px;
         font-style: italic;
         color: #1F2937;
-        width: 600px;
+        padding: 16px;
     }
 
     .descripcion-c .autor{
@@ -183,7 +186,7 @@ body {
         font-weight: bold;
         color: #1F2937;
         text-align: end;
-        width: 600px;
+        padding: 16px;
     }
 
 
@@ -193,9 +196,10 @@ body {
 
     .contacto{
         display: flex;
-        height: 200px;
+        padding: 32px;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .contacto .relleno{
@@ -251,6 +255,7 @@ body {
 
     .footer .corpy{
         color:white;
+        font-size: 24px;
     }
 
     /*fin footer*/
